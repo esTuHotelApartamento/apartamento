@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/apartamento",
   siteMetadata: {
     title: `Es tu Hotel Apartamento`,
     description: `Reserva una habitación y disfruta de unas vacaciones unicas 😎🎶. Realizada para un proyecto en la universidad,`,

@@ -2,9 +2,9 @@ import React, { useEffect } from "react"
 import { Link } from "gatsby"
 
 import SEO from "../components/seo"
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import { hotelData } from '../logic/DB/DatosHotel'
+import { hotelData } from "../logic/DB/DatosHotel"
 
 const Section = styled.div`
   width: 100%;
@@ -16,7 +16,7 @@ const Section = styled.div`
 `
 
 const ContainerTexto = styled.div`
-  max-width:  45%; 
+  max-width: 45%;
   min-height: 800px;
   padding-left: 24px;
   margin-left: 50%;
@@ -31,9 +31,7 @@ const ContainerTexto = styled.div`
     margin-left: 0%;
     margin-top: 24px;
     max-width: 100%;
-
   }
-
 `
 const ImageHead = styled.img`
   max-width: 50%;
@@ -56,7 +54,6 @@ const ImageHead = styled.img`
 const TitleRoom = styled.h1`
   font-size: 51px;
   color: ${({ theme }) => theme.colors.primary.main};
-
 `
 const DescRoom = styled.div`
   ul {
@@ -79,30 +76,28 @@ const BtnReserve = styled.div`
   }
 `
 
-
 const HabitacionMatrimonialPage = () => {
-
   useEffect(() => {
     console.log(hotelData)
   })
-
 
   return (
     <>
       <SEO title="Habitación Matrimonial" />
       <Section>
-        <ImageHead src="/habitaciones/habitaciones-simple-matrimonial/hsm3-cama.JPG" alt="Image" />
+        <ImageHead
+          src="/habitaciones/habitaciones-simple-matrimonial/hsm3-cama.JPG"
+          alt="Image"
+        />
         <ContainerTexto>
-
           <TitleRoom>Habitación Doble</TitleRoom>
           <DescRoom>
-
             <p>
-            Muy acogedoras, dan una sensación de confort intemporal; diseñadas
+              Muy acogedoras, dan una sensación de confort intemporal; diseñadas
               para momentos especiales y estancias tranquilas. Las habitaciones
-              individuales, con 90 m2, tienen doble camas, baño en mármol
-              con bañera y un espacioso comedor bien equipado, adaptado a tus necesidades. Además, le reciben con
-              una bebida de bienvenida.
+              individuales, con 90 m2, tienen doble camas, baño en mármol con
+              bañera y un espacioso comedor bien equipado, adaptado a tus
+              necesidades. Además, le reciben con una bebida de bienvenida.
             </p>
             <ul>
               <li>Concina bien equipada</li>
@@ -121,10 +116,13 @@ const HabitacionMatrimonialPage = () => {
               <li>Caja fuerte individual digital </li>
             </ul>
           </DescRoom>
-          <BtnReserve> <Link to={"/reservar#simple"}> Ver displonibles </Link> </BtnReserve>
-
+          <BtnReserve>
+            {" "}
+            <Link to={"/reservar#simple"}> Ver displonibles </Link>{" "}
+          </BtnReserve>
         </ContainerTexto>
       </Section>
-    </>)
+    </>
+  )
 }
 export default HabitacionMatrimonialPage
