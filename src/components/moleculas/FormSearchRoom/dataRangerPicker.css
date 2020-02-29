@@ -1,0 +1,27 @@
+.DateRangePickerInput {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-bottom:  1px solid #dbdbdb;
+}
+.DateInput {
+  width: 100%;
+  text-align: center !important;
+}
+
+
+@media (max-width: 600px){
+  .DateInput {
+    width: 100%;
+    text-align: center !important;
+    margin: 4px 0px;
+  }
+  .DateInput input::placeholder {
+    text-align: center;
+    font-size: 14px;
+  }
+  .DateInput_fang {
+    display: none;
+  }
+}
