@@ -14,9 +14,9 @@ export default ({ element, ...props }) => {
   const store = createStore()
   return (
     <Provider store={store}>
-      <Layout {...props}>
-        <ThemeProvider theme={theme}>{element}</ThemeProvider>
-      </Layout>
+      <ThemeProvider theme={theme}>
+        <Layout {...props}>{element}</Layout>
+      </ThemeProvider>
     </Provider>
   )
 }

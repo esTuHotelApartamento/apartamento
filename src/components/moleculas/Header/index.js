@@ -203,9 +203,9 @@ class Header extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isTop: window.location.pathname === "/" ? true : false,
+      isTop: (typeof window !== `undefined`)?window.location.pathname === "/" ? true : false : false,
       isOpenBurgerMenu: false,
-      isMobile: window.innerWidth <= 800 ? true : false,
+      isMobile: typeof window !== `undefined`? window.innerWidth <= 800 ? true : false : false,
       isLogin: true,
     }
     this.handleIsTop = this.handleIsTop.bind(this)
