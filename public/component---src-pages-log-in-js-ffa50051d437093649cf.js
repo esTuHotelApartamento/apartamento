@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{OVyX:function(e,a,n){"use strict";n.r(a);var t=n("q1tI"),r=n.n(t),i=n("vrFN"),c=n("akCk");a.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement(i.a,{title:"Pagina para iniciar sesión"}),r.a.createElement(c.b,null))}}}]);
+//# sourceMappingURL=component---src-pages-log-in-js-ffa50051d437093649cf.js.map
