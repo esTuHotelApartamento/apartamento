@@ -55,7 +55,7 @@ const ImageHead = styled.img`
 `
 const TitleRoom = styled.h1`
   font-size: 54px;
-  color: ${({ theme }) => theme.colors.primary.main};
+  color: rgba(237,242,92, 1);
 
 `
 const DescRoom = styled.div`

@@ -16,7 +16,7 @@ import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 
 import { Provider } from "react-redux"
-import generateStore from "../../redux/store"
+import store from "../../redux/store"
 
 import Modal from "react-modal"
 Modal.setAppElement("#___gatsby")
@@ -32,14 +32,7 @@ const MainStyled = styled.main`
     width: 100%;
   }
  `
-// let store = ""
-// if (typeof window.localStorage.getItem("dataGuardada") !== "string") {
-//   store = generateStore()
-// } else {
-//   let dataParse = JSON.parse(window.localStorage.getItem("dataGuardada"))
-//   store = generateStore(dataParse)
-// }
-let store = generateStore()
+
 
 
 const Layout = ({ children }) => {

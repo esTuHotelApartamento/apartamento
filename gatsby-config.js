@@ -2,17 +2,19 @@ module.exports = {
   pathPrefix: "/apartamento",
   siteMetadata: {
     title: `Es tu Hotel Apartamento`,
-    description: `Reserva una habitación y disfruta de unas vacaciones unicas 😎🎶. Realizada para un proyecto en la universidad,`,
+    description: `Reserva una habitación y disfruta de unas vacaciones unicas . Realizada para un proyecto en la universidad,`,
     author: `@avicdro`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
-        // Add any options here
+        ssr: false,
+        displayName: false,
+        minify: false,
       },
     },
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
