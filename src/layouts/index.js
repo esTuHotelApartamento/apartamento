@@ -9,14 +9,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Header, Footer } from "../components/moleculas"
 import "./layout.css"
-import styled, { ThemeProvider } from "styled-components"
-import theme from "../config/theming"
+import styled from "styled-components"
 
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 
-import { Provider } from "react-redux"
-import store from "../../redux/store"
 
 import Modal from "react-modal"
 Modal.setAppElement("#___gatsby")
@@ -31,33 +28,24 @@ const MainStyled = styled.main`
   @media (max-width: 800px) {
     width: 100%;
   }
- `
-
-
+`
 
 const Layout = ({ children }) => {
   return (
-    <div >
+    <div>
       <link
         href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
         rel="stylesheet"
       />
-      <Provider store={store}>
-        <ThemeProvider theme={theme}>
-          <LayoutContainer>
-            <Header />
-            <MainStyled>{children}</MainStyled>
-            <Footer />
-          </LayoutContainer>
-          <ToastContainer position={"bottom-right"} />
-        </ThemeProvider>
-      </Provider>
+
+        <LayoutContainer>
+          <Header />
+          <MainStyled>{children}</MainStyled>
+          <Footer />
+        </LayoutContainer>
+        <ToastContainer position={"bottom-right"} />
     </div>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

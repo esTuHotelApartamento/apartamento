@@ -140,7 +140,7 @@ const IndexPage = () => {
           acondicionado, nevera, agua caliente, caja de seguridad (opcional).
         </DescHabitaciones>
         <ContainerCardsRoom>
-          <Link to="/habitacion-simple/">
+          <Link to="/habitacion-individual/">
             <ItemCardRoom>
               <IntemCardRoomImg src="./habitaciones/habitaciones-simples-individuales/hsi2-cama.JPG" />
               <IntemCardRoomText>
@@ -154,13 +154,13 @@ const IndexPage = () => {
               <VerMasBtn>Ver más</VerMasBtn>
             </ItemCardRoom>
           </Link>
-          <Link to="/habitacion-matrimonial/">
+          <Link to="/habitacion-doble/">
             <ItemCardRoom>
               <IntemCardRoomImg src="./habitaciones/habitaciones-simple-matrimonial/hsm3-cama.JPG" />
               <IntemCardRoomText>
                 <TitleH3> Doble </TitleH3>
                 <p>
-                  Una habitación matrimonial es un pequeño rincón privado para
+                  Una habitación doble es un pequeño rincón privado para
                   disfrutar, en el que la tranquilidad y la intimidad son como
                   las del hogar.
                 </p>
@@ -168,7 +168,7 @@ const IndexPage = () => {
               <VerMasBtn>Ver más</VerMasBtn>
             </ItemCardRoom>
           </Link>
-          <Link to="/habitacion-suit/">
+          <Link to="/habitacion-triple/">
             <ItemCardRoom>
               <IntemCardRoomImg src="./habitaciones/habitaciones-suit/hs2.jpg" />
               <IntemCardRoomText>

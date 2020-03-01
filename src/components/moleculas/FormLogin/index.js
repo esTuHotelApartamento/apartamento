@@ -152,8 +152,6 @@ const FormLogin = props => {
   )
 }
 
-const mapStateToProps = state => ({})
-
 const mapDispatchToProps = dispatch => {
   return {
     loginUser: dataUser => {

@@ -134,7 +134,7 @@ const FormSearchRoom = (props) => {
   const [CantAdult, setCantAdult] = useState(1);
   const [CantChildrens, setCantChildrens] = useState(0);
 
-  const [isMobile, setIsMobile] = useState((window.innerWidth <= 700) ? true : false)
+  const [isMobile, setIsMobile] = useState((typeof window !== `undefined`)?(window.innerWidth <= 700) ? true : false : false)
 
   const handleChangeDates = ({ startDate, endDate }) => {
     setValue("initialDateInput", startDate);
